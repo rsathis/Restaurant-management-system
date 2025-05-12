@@ -7,7 +7,7 @@ const Navbar2 = (props) => {
   return (
     <nav className="navbar navbar-expand-lg bg-light" style={{fontFamily:' "Merriweather", serif'}}>
       <a className="nav-link" style={{ marginLeft: "20px" }}>
-        GKMIT RESTAURANT <span className="sr-only"></span>
+        DEWALD RESTAURANT <span className="sr-only"></span>
       </a>
       <Link className="navbar-brand mx-auto">
         <b>Checkout the Tasty Food </b>

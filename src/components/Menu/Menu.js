@@ -6,7 +6,7 @@ import './Menu.css'
 import Badge from 'react-bootstrap/Badge';
 
 const Menu = () => {
-    const [data,setData]=useState([])
+    const [data,setData]=useState([{food_id:1,food_name:"Dosa",food_price:50,food_image:"https://www.awesomecuisine.com/wp-content/uploads/2009/06/Plain-Dosa.jpg"},{food_id:1,food_name:"Idly",food_price:10,food_image:"https://www.awesomecuisine.com/wp-content/uploads/2009/06/Plain-Dosa.jpg"}]);
     // const [count,setCount]=useState(0)
     // {
     //   setCount(count+1)

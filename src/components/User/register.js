@@ -48,7 +48,7 @@ export const Register = () => {
             <input value={email} onChange={(e)=>{setEmail(e.target.value)}} type="email" placeholder="Enter your email"  />
             <label htmlFor="password">Password</label>
             <input value={password} onChange={(e)=>{setPassword(e.target.value)}} type="password" placeholder="Enter your password" />
-            <button>Register</button>
+            <button type="submit">Register</button>
             </form>
             </div>
     </div>

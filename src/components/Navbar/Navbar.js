@@ -6,7 +6,7 @@ const Navbar = () => {
         <nav className="navbar navbar-expand-lg bg-muted">
   <div className="container-fluid">
 
-        <a class="nav-link"  >GKMIT RESTAURANT <span class="sr-only"></span></a>
+        <a class="nav-link"  >DEWALD RESTAURANT <span class="sr-only"></span></a>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
       </ul>

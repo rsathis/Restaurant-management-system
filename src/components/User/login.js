@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import Image from "./../../components/images/foodie.jpeg";
-import { useNavigate } from "react-router-dom";
+import { useNavigate,Link } from "react-router-dom";
 import "../../../src/./App.css";
 export const Login = () => {
   const [email, setEmail] = useState("");
@@ -37,19 +37,27 @@ export const Login = () => {
         });
     }
   };
-
+  const handleSubmit=()=>{
+    const defaultEmail="email@gmail.com";
+    const defaultPassword="pass";
+    if (email === defaultEmail && password === defaultPassword) {
+      navigate("/Home"); 
+    } else {
+      alert("Enter correct email or password");
+    }
+  };
   return (
     <>
       <Navbar />
       <div className="App">
         <div className="auth-form-container">
           <h2>Login</h2>
-          <form className="login-form" onSubmit={Submit}>
+          <form className="login-form" onSubmit={handleSubmit} >
             <label htmlFor="email">email</label>
             <input value={email} onChange={(e) => setEmail(e.target.value)}type="email" placeholder="Enter your email id"/>
             <label htmlFor="password">password</label>
               <input value={password} onChange={(e) => setPassword(e.target.value)}type="password" placeholder="********"/>
-            <button>Log In</button>
+            <button type="submit" >Log In</button>
           </form>
         </div>
       </div>
