@@ -6,7 +6,11 @@ import './Menu.css'
 import Badge from 'react-bootstrap/Badge';
 
 const Menu = () => {
-    const [data,setData]=useState([{food_id:1,food_name:"Dosa",food_price:50,food_image:"https://www.awesomecuisine.com/wp-content/uploads/2009/06/Plain-Dosa.jpg"},{food_id:1,food_name:"Idly",food_price:10,food_image:"https://www.awesomecuisine.com/wp-content/uploads/2009/06/Plain-Dosa.jpg"}]);
+    const [data,setData]=useState([
+      {food_id:1,food_name:"Dosa",food_price:50,food_image:"https://www.awesomecuisine.com/wp-content/uploads/2009/06/Plain-Dosa.jpg"},
+      {food_id:1,food_name:"Idly",food_price:10,food_image:"https://tse3.mm.bing.net/th?id=OIP.acHMl7OKBxP2eZEgFZ7bJgHaFj&pid=Api&P=0&h=180"},
+      {food_id:1,food_name:"Samosa",food_price:20,food_image:"https://tse2.mm.bing.net/th?id=OIP.9cd5aubJTQzVbCuIHJtYTwHaGl&pid=Api&P=0&h=180"},
+      {food_id:1,food_name:"Paongal",food_price:30,food_image:"https://tse2.mm.bing.net/th?id=OIP.ff3K8IggGGjjcMM0kzj01QAAAA&pid=Api&P=0&h=180"},]);
     // const [count,setCount]=useState(0)
     // {
     //   setCount(count+1)
@@ -19,7 +23,7 @@ const Menu = () => {
                 headers:{
                     'Content-Type':'application/json'
                 },
-                body: JSON.stringify( {
+                body: JSON.stringify( { 
                     food_id:id,
                     user_id:2
                 })
